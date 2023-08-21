@@ -12,7 +12,8 @@
     "eslint:fix": "eslint --ext .ts src/ --fix",
     "prettier": "prettier --check 'src/**/*.ts'",
     "prettier:fix": "prettier --write 'src/**/*.ts'",
-    "lint": "npm run eslint && npm run prettier && npm run tsc",
+    "type-check": "tsc --noemit",
+    "lint": "npm run eslint && npm run prettier && npm run type-check",
     "lint:fix": "npm run eslint:fix && npm run prettier:fix",
     "build": "tsc",
     "prepare": "npm run build"
