@@ -1,0 +1,37 @@
+{
+  "name": "oud-types",
+  "description": "OuDia file specification",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "private": true,
+  "author": "01397 <01397dev@gmail.com> (https://github.com/01397)",
+  "scripts": {
+    "eslint": "eslint --ext .ts src/",
+    "eslint:fix": "eslint --ext .ts src/ --fix",
+    "prettier": "prettier --check 'src/**/*.ts'",
+    "prettier:fix": "prettier --write 'src/**/*.ts'",
+    "lint": "npm run eslint && npm run prettier && npm run tsc",
+    "lint:fix": "npm run eslint:fix && npm run prettier:fix",
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "dependencies": {
+    "@route-builders/oud-to-json": "^0.1.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.3",
+    "@types/node": "^20.4.2",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.45.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-jest": "^27.2.3",
+    "eslint-plugin-sort-keys-fix": "^1.1.2",
+    "jest": "^29.6.1",
+    "prettier": "^3.0.0",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.1.6"
+  }
+}
